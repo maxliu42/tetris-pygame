@@ -150,7 +150,7 @@ def draw_border():
     # horizontal lines
     for offset in [0, scale * game.width]:
         pygame.draw.line(screen, LIGHT_GREY, (game.x + offset + 1, game.y + 1),
-                         (game.x + offset + 1, game.y + scale*game.height), 2)
+                                             (game.x + offset + 1, game.y + scale*game.height), 2)
     # vertical lines
     for offset in [0, scale * game.height]:
         pygame.draw.line(screen, LIGHT_GREY, (game.x + 1, game.y + offset + 1),
@@ -405,7 +405,7 @@ while(user_exit == False):
                 full_redraw(False)
                 game.active = False
                 # play game over sound effect
-                sound_effect = pygame.mixer.Sound('audio/gameover.wav')
+                sound_effect = pygame.mixer.Sound("audio/gameover.wav")
                 sound_effect.play()
                 # break out of while loop since game has ended
                 break
@@ -471,7 +471,7 @@ while(user_exit == False):
                 if(event.key == ord('r')):
                     game.active = False
                     # play game over sound effect
-                    sound_effect = pygame.mixer.Sound('audio/gameover.wav')
+                    sound_effect = pygame.mixer.Sound("audio/gameover.wav")
                     sound_effect.play()
             elif(event.type == pygame.KEYUP):
                 # user has let go of the down key
